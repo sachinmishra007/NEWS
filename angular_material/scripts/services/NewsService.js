@@ -8,7 +8,7 @@ angular.module("NewsAPI.services", [])
         return $http({
             datatype: 'JSON',
             method: 'GET',
-            url: '/NEWS/angular_material/scripts/jsondata/NewsSources.json',
+            url: 'angular_material/scripts/jsondata/NewsSources.json',
             cache: false
         });
     };
