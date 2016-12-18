@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome to News-Sachin Mishra</title>
+    <title>Welcome to Daily News Appliation By Sachin Mishra</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -37,7 +37,7 @@
             </md-input-container>
             <md-list style="margin-top: -52px;">
                 <md-list-item ng-repeat="newsapi in NewsAPISource|filter:ngSourceNews" class="md-block">
-                    <md-icon md-svg-src="info" style="background-color: white;    border-radius: 50%;    width: 9%;    margin-left: 2%;        height: 3%;"></md-icon>
+                    <!--<md-icon md-svg-src="info" style="background-color: white;    border-radius: 50%;    width: 9%;    margin-left: 2%;        height: 3%;"></md-icon>-->
                     <md-divider style="margin-left: -96px;    background-color: aliceblue;    backgroud-color: aliceblue;    width: 100%;" md-inset></md-divider>
                     <md-button style="color: white;text-align:left" class="md-block widthOfSideNav" ng-click="GetNewsContentData(newsapi.Sources,newsapi.title)">{{newsapi.title}}</md-button>
                 </md-list-item>
