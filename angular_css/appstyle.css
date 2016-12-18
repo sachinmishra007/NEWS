@@ -1,4 +1,4 @@
-﻿﻿.wrap {
+﻿.wrap {
     max-width: 38rem;
     margin: 0 auto;
     overflow: hidden;
@@ -6,6 +6,7 @@
 
 
 .site__title {
+    text-shadow: 3px 2px 1px #ef0b0b;
     color: #7c12cc;
     background-image: -webkit-linear-gradient(92deg,#7c12cc,#0d0c29);
     -webkit-background-clip: text;
@@ -66,13 +67,18 @@ h1, .alpha {
         height: 100px !important;
         margin-bottom: 23px !important;
     }
+
     .loadingForMobile {
         margin-left: 110px !important;
     }
-    .loadingtheLoader{
-            margin-left: 50% !important;
+
+    .loadingtheLoader {
+        margin-left: 50% !important;
     }
 
+    .newsImageViewOnMobile {
+            margin-top: 41px !important;
+    }
 }
 
 
@@ -84,8 +90,6 @@ h1, .alpha {
     .loadertoShowOnMobile {
         margin-top: -8px;
     }
-
-    
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
