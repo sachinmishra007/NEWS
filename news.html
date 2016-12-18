@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Daily News Appliation By Sachin Mishra</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, minimal-ui" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link href="angular_css/angular-material.min.css" rel="stylesheet" />
+    <link href="angular_css/animate.min.css" rel="stylesheet" />
+    <link href="angular_css/appstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body ng-app="NewsAPI" ng-controller="NewsAPIController" layout="column">
+
+    <md-toolbar layout="row" style="background-color: #3f51b5;">
+        <md-button class="menu" hide-gt-sm ng-click="toggleList()" aria-label="Menu">
+            <md-icon md-svg-src="menu"></md-icon>
+        </md-button>
+        <h1 class="title_md_toolbar"><center>Daily News</center></h1>
+    </md-toolbar>
+    <div layout="row" flex>
+        <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2" style="width: 30%;background-color: #3f51b5;">
+            <div layout-align="center center">
+                <center>
+                    <a style="cursor:pointer;text-decoration:none;" href="index.html">
+                        <img src="angular_img/img1.jpg" class="NewsLogoStyle" />
+                        <h1 style="color: aliceblue;font-size: 38px;margin-top: 3px;">Daily News</h1>
+                    </a>
+                </center>
+            </div>
+            <md-input-container style="    margin-top: -9px;">
+                <label style="color: aliceblue;    font-size: 12px;">Search for News Source</label>
+                <input type="text" ng-model="ngSourceNews" style="color: yellow !important;" />
+            </md-input-container>
+            <md-list style="margin-top: -52px;">
+                <md-list-item ng-repeat="newsapi in NewsAPISource|filter:ngSourceNews" class="md-block">
+                    <!--<md-icon md-svg-src="info" style="background-color: white;    border-radius: 50%;    width: 9%;    margin-left: 2%;        height: 3%;"></md-icon>-->
+                    <md-divider style="margin-left: -96px;    background-color: aliceblue;    backgroud-color: aliceblue;    width: 100%;" md-inset></md-divider>
+                    <md-button style="color: white;text-align:left" class="md-block widthOfSideNav" ng-click="GetNewsContentData(newsapi.Sources,newsapi.title)">{{newsapi.title}}</md-button>
+                </md-list-item>
+                <md-list-item class="md-block" ng-show="NewsAPISource.length<=0">
+                    <md-divider style="margin-left: -96px;    background-color: aliceblue;    backgroud-color: aliceblue;    width: 100%;" md-inset></md-divider>
+                    <md-button style="color: white;text-align:left" class="md-block widthOfSideNav">No Results Found !</md-button>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+        <md-content id="content" class="md-padding mdContentSize">
+            <div ng-show="IsNewsVisible==false">
+                <div>
+                    <div class="loadingtheLoader" style="    margin-left: 400px;    margin-top: 107px">
+                        <md-progress-circular md-mode="indeterminate" class="md-warn md-hue-4" md-diameter="96"></md-progress-circular>
+                    </div>
+                    <h1 class="md-display-1 loadingForMobile">
+                        <center style="color: #3f51b5; font-size: 38px;    text-shadow: -1px 3px 8px #3f51b5; ">Loading.....</center>
+                    </h1>
+                </div>
+            </div>
+            <div ng-show="IsNewsVisible">
+                <div layout="column">
+                    <span ng-repeat="apicontent in NewsAPISourceContent">
+                        <h3 ng-if="$first"><center class="SourceTitleNamestyle">{{SourceTitleName}}</center> </h3>
+                        <div ng-if="$first" layout="row" layout-sm="column" layout-align="space-around" class="md-block">
+                            <md-progress-linear md-mode="indeterminate" class="md-warn md-hue-3" md-diameter="96"></md-progress-linear>
+                        </div>
+                        <md-toolbar layout-xs="column" style="background-color: #3e4fb1;border-radius: 5px;">
+                            <div class="md-toolbar-tools toolbarMobileHeight">
+                                <h3 class="title_md_toolbar">{{$index+1}} . {{ apicontent.title }}</h3>
+                            </div>
+                            <div layout="row" layout-sm="column" layout-align="space-around" class="md-block" style="    background-color: #17ec32 !important;">
+                                <md-progress-linear md-mode="indeterminate" class="progressLineardemoBasicUsage md-warn md-hue-3"></md-progress-linear>
+                            </div>
+                        </md-toolbar>
+                        <md-card style="color:#000004;" class="md-whiteframe-24dp">
+                            <md-card-header>
+                                <md-card-avatar>
+                                    <img src="angular_img/img1.jpg" class="titleStyleforNews" />
+                                </md-card-avatar>
+                                <md-card-header-text>
+                                    <span class="md-title">{{ apicontent.title }}</span>
+                                    <span class="md-subhead">
+                                        <span style="word-wrap:normal">
+                                            Article Published on {{ apicontent.publishedAt|date:'dd-MM-yyyy' }}
+                                            at {{ apicontent.publishedAt|date:'HH:mm:ss' }}
+                                        </span>
+                                </md-card-header-text>
+                            </md-card-header>
+                            <center><img class="md-whiteframe-24dp newsImageViewOnMobile" style="width:80%;margin-top: 27px;    border-style: solid;    border-color: #5ece09 rgb(232, 71, 13);;    border-radius: 8px;" ng-src="{{apicontent.urlToImage}}" class="md-card-image" alt="Washed Out"></center>
+
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">{{ apicontent.title }}</span>
+                                </md-card-title-text>
+                            </md-card-title>
+
+                            <md-card-content>
+                                <p>
+                                    {{apicontent.description}}
+                                </p>
+                            </md-card-content>
+                            <div layout="row">
+                                <md-button href="{{apicontent.url}}" target="_blank" class="md-raised md-primary md-ink-ripple md-block">Read More</md-button>
+                                <md-button ng-disabled="apicontent.author==null ? true :false" class="md-raised md-primary md-ink-ripple md-block" href="http://google.com?q={{apicontent.author}}" target="_blank">Author</md-button>
+                            </div>
+                        </md-card>
+                    </span>
+                </div>
+            </div>
+        </md-content>
+    </div>
+
+
+</body>
+<script src="angular_material/jquery-1.10.2.min.js"></script>
+<script src="angular_material/angular.min.js"></script>
+<script src="angular_material/angular-animate.min.js"></script>
+<script src="angular_material/angular-aria.min.js"></script>
+<script src="angular_material/angular-messages.min.js"></script>
+<script src="angular_material/angular-material.min.js"></script>
+<script src="angular_material/scripts/app.js"></script>
+<script src="angular_material/scripts/services/NewsService.js"></script>
+<script src="angular_material/scripts/controllers/NewsControllers.js"></script>
+</html>

@@ -97,6 +97,8 @@
     <Content Include="angular_img\img1.jpg" />
     <Content Include="angular_img\info.svg" />
     <Content Include="angular_img\menu.svg" />
+    <Content Include="angular_material\scripts\controllers\DocumentationController.js" />
+    <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -124,7 +126,8 @@
     <Content Include="angular_material\scripts\services\NewsService.js" />
     <Content Include="DisplayMyText.html" />
     <Content Include="favicon.ico" />
-    <Content Include="index.html" />
+    <Content Include="news.html" />
+    <Content Include="weather.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
