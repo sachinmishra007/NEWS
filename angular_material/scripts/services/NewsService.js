@@ -15,7 +15,7 @@ angular.module("NewsAPI.services", [])
 
 
     NewsAPIServices.GetNewsJsonDataFromSource = function (_sourceName) {
-        console.log(NewsAPIKey.UrlBefore + _sourceName + NewsAPIKey.UrlAfter + NewsAPIKey.APIGeneratedKey);
+      //  console.log(NewsAPIKey.UrlBefore + _sourceName + NewsAPIKey.UrlAfter + NewsAPIKey.APIGeneratedKey);
         return $http({
             datatype: 'JSON',
             method: 'GET',

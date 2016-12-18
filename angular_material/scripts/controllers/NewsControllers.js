@@ -23,12 +23,13 @@ angular.module("NewsAPI.controllers", [])
 
 
         $scope.GetNewsContentData = function (_sourceName, _title) {
+            $scope.IsNewsVisible = false;
             $scope.SourceTitleName = _title;
             NewsAPIServices
         .GetNewsJsonDataFromSource(_sourceName)
         .success(function (_result) {
             $scope.NewsAPISourceContent = _result.articles;
-            $log.info($scope.NewsAPISourceContent);
+            //$log.info($scope.NewsAPISourceContent);
             //$mdSidenav('left').toggle();
             $mdSidenav('left').close();
             $scope.IsNewsVisible = true;

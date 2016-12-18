@@ -17,11 +17,8 @@ NewsAPI.config(function ($mdThemingProvider, $mdIconProvider) {
     $mdIconProvider
     .defaultIconSet("./assets/svg/avatars.svg", 128)
     .icon("menu", "./angular_img/menu.svg", 24)
-    .icon("info", "./angular_img/info.svg", 18)
-    .icon("google_plus", "./assets/svg/google_plus.svg", 512)
-    .icon("hangouts", "./assets/svg/hangouts.svg", 512)
-    .icon("twitter", "./assets/svg/twitter.svg", 512)
-    .icon("phone", "./assets/svg/phone.svg", 512);
+    .icon("info", "./angular_img/info.svg", 18);
+
     $mdThemingProvider.theme('default')
     .primaryPalette('brown')
     .accentPalette('red');
