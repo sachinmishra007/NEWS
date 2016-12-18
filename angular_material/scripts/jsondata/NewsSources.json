@@ -1,0 +1,284 @@
+﻿[
+  {
+    "title": "ABC News (AU) general / en",
+    "Sources": "abc-news-au"
+  },
+  {
+    "title": "Ars Technica technology / en",
+    "Sources": "ars-technica"
+  },
+  {
+    "title": "Associated Press general / en",
+    "Sources": "associated-press"
+  },
+  {
+    "title": "BBC News general / en",
+    "Sources": "bbc-news"
+  },
+  {
+    "title": "BBC Sport sport / en",
+    "Sources": "bbc-sport"
+  },
+  {
+    "title": "Bild general / de",
+    "Sources": "bild"
+  },
+  {
+    "title": "Bloomberg business / en",
+    "Sources": "bloomberg"
+  },
+  {
+    "title": "Business Insider business / en",
+    "Sources": "business-insider"
+  },
+  {
+    "title": "Business Insider (UK) business / en",
+    "Sources": "business-insider-uk"
+  },
+  {
+    "title": "Buzzfeed entertainment / en",
+    "Sources": "buzzfeed"
+  },
+  {
+    "title": "CNBC business / en",
+    "Sources": "cnbc"
+  },
+  {
+    "title": "CNN general / en",
+    "Sources": "cnn"
+  },
+  {
+    "title": "Daily Mail entertainment / en",
+    "Sources": "daily-mail"
+  },
+  {
+    "title": "Der Tagesspiegel general / de",
+    "Sources": "der-tagesspiegel"
+  },
+  {
+    "title": "Die Zeit business / de",
+    "Sources": "die-zeit"
+  },
+  {
+    "title": "Engadget technology / en",
+    "Sources": "engadget"
+  },
+  {
+    "title": "Entertainment Weekly entertainment / en",
+    "Sources": "entertainment-weekly"
+  },
+  {
+    "title": "ESPN sport / en",
+    "Sources": "espn"
+  },
+  {
+    "title": "ESPN Cric Info sport / en",
+    "Sources": "espn-cric-info"
+  },
+  {
+    "title": "Financial Times business / en",
+    "Sources": "financial-times"
+  },
+  {
+    "title": "Focus general / de",
+    "Sources": "focus"
+  },
+  {
+    "title": "Football Italia sport / en",
+    "Sources": "football-italia"
+  },
+  {
+    "title": "Fortune business / en",
+    "Sources": "fortune"
+  },
+  {
+    "title": "FourFourTwo sport / en",
+    "Sources": "four-four-two"
+  },
+  {
+    "title": "Fox Sports sport / en",
+    "Sources": "fox-sports"
+  },
+  {
+    "title": "Google News general / en",
+    "Sources": "google-news"
+  },
+  {
+    "title": "Gruenderszene technology / de",
+    "Sources": "gruenderszene"
+  },
+  {
+    "title": "Hacker News technology / en",
+    "Sources": "hacker-news"
+  },
+  {
+    "title": "Handelsblatt business / de",
+    "Sources": "handelsblatt"
+  },
+  {
+    "title": "IGN gaming / en",
+    "Sources": "ign"
+  },
+  {
+    "title": "Independent general / en",
+    "Sources": "independent"
+  },
+  {
+    "title": "Mashable entertainment / en",
+    "Sources": "mashable"
+  },
+  {
+    "title": "Metro general / en",
+    "Sources": "metro"
+  },
+  {
+    "title": "Mirror general / en",
+    "Sources": "mirror"
+  },
+  {
+    "title": "MTV News music / en",
+    "Sources": "mtv-news"
+  },
+  {
+    "title": "MTV News (UK) music / en",
+    "Sources": "mtv-news-uk"
+  },
+  {
+    "title": "National Geographic science-and-nature / en",
+    "Sources": "national-geographic"
+  },
+  {
+    "title": "New Scientist science-and-nature / en",
+    "Sources": "new-scientist"
+  },
+  {
+    "title": "Newsweek general / en",
+    "Sources": "newsweek"
+  },
+  {
+    "title": "New York Magazine general / en",
+    "Sources": "new-york-magazine"
+  },
+  {
+    "title": "NFL News sport / en",
+    "Sources": "nfl-news"
+  },
+  {
+    "title": "Polygon gaming / en",
+    "Sources": "polygon"
+  },
+  {
+    "title": "Recode technology / en",
+    "Sources": "recode"
+  },
+  {
+    "title": "Reddit /r/all general / en",
+    "Sources": "reddit-r-all"
+  },
+  {
+    "title": "Reuters general / en",
+    "Sources": "reuters"
+  },
+  {
+    "title": "Sky News general / en",
+    "Sources": "sky-news"
+  },
+  {
+    "title": "Spiegel Online general / de",
+    "Sources": "spiegel-online"
+  },
+  {
+    "title": "T3n technology / de",
+    "Sources": "t3n"
+  },
+  {
+    "title": "TalkSport sport / en",
+    "Sources": "talksport"
+  },
+  {
+    "title": "TechCrunch technology / en",
+    "Sources": "techcrunch"
+  },
+  {
+    "title": "TechRadar technology / en",
+    "Sources": "techradar"
+  },
+  {
+    "title": "The Economist business / en",
+    "Sources": "the-economist"
+  },
+  {
+    "title": "The Guardian (AU) general / en",
+    "Sources": "the-guardian-au"
+  },
+  {
+    "title": "The Guardian (UK) general / en",
+    "Sources": "he-guardian-uk"
+  },
+  {
+    "title": "The Hindu general / en",
+    "Sources": "the-hindu"
+
+  },
+  {
+    "title": "The Huffington Post general / en",
+    "Sources": "the-huffington-post"
+  },
+  {
+    "title": "The Lad Bible entertainment / en",
+    "Sources": "the-lad-bible"
+  },
+  {
+    "title": "The New York Times general / en",
+    "Sources": "the-new-york-times"
+
+  },
+  {
+    "title": "The Next Web technology / en",
+    "Sources": "the-next-web"
+
+  },
+  {
+    "title": "The Sport Bible sport / en",
+    "Sources": "the-sport-bible"
+
+  },
+  {
+    "title": "The Telegraph general / en",
+    "Sources": "the-telegraph"
+
+  },
+  {
+    "title": "The Times of India general / en    ",
+    "Sources": "the-times-of-india"
+  },
+  {
+    "title": " The Verge technology / en",
+    "Sources": "the-verge"
+  },
+  {
+    "title": " The Wall Street Journal business / en",
+    "Sources": "the-wall-street-journal"
+  },
+  {
+    "title": " The Washington Post general / en",
+    "Sources": "the-washington-post"
+  },
+  {
+    "title": " Time general / en",
+    "Sources": "time"
+  },
+  {
+    "title": " USA Today general / en",
+    "Sources": "usa-today"
+  },
+  {
+    "title": " Wired.de technology / de",
+    "Sources": "wired-de"
+  },
+  {
+    "title": " Wirtschafts Woche business / de",
+    "Sources": "wirtschafts-woche"
+  }
+
+]
