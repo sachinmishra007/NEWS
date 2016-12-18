@@ -23,6 +23,7 @@ angular.module("NewsAPI.controllers", [])
 
 
         $scope.GetNewsContentData = function (_sourceName, _title) {
+            $mdSidenav('left').close();
             $scope.IsNewsVisible = false;
             $scope.SourceTitleName = _title;
             NewsAPIServices
@@ -30,8 +31,7 @@ angular.module("NewsAPI.controllers", [])
         .success(function (_result) {
             $scope.NewsAPISourceContent = _result.articles;
             //$log.info($scope.NewsAPISourceContent);
-            //$mdSidenav('left').toggle();
-            $mdSidenav('left').close();
+            //$mdSidenav('left').toggle();           
             $scope.IsNewsVisible = true;
         })
         .error(function (_error) {
