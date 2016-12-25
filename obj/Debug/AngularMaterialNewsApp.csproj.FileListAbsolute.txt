@@ -1,0 +1,132 @@
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\ApplicationInsights.config
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\csc.exe
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Collections.Immutable.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\vbc.exe
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe.config
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll.config
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.pdb
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.csprojResolveAssemblyReference.cache
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.dll
+E:\Study on 11-09-2016\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.pdb
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\ApplicationInsights.config
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\csc.exe
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Collections.Immutable.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\vbc.exe
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe.config
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll.config
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.pdb
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.csprojResolveAssemblyReference.cache
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.dll
+D:\Practice Examples\NewsAPP-gh-pages-news\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.pdb
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\ApplicationInsights.config
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\csc.exe
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\vbc.exe
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll.config
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.pdb
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.dll
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.pdb
+C:\Users\Sachin\Downloads\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.csprojResolveAssemblyReference.cache
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\ApplicationInsights.config
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\csc.exe
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Collections.Immutable.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\System.Reflection.Metadata.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\vbc.exe
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\roslyn\VBCSCompiler.exe.config
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll.config
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\AngularMaterialNewsApp.pdb
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Agent.Intercept.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.DependencyCollector.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.Web.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.AI.WindowsServer.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.ApplicationInsights.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.csprojResolveAssemblyReference.cache
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.dll
+F:\AngularMaterialNewsApp\AngularMaterialNewsApp\AngularMaterialNewsApp\obj\Debug\AngularMaterialNewsApp.pdb

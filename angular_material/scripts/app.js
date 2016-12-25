@@ -1,8 +1,9 @@
 ﻿
+
 var NewsAPI = angular.module("NewsAPI", [
     'ngMaterial',
     'NewsAPI.controllers',
-    'NewsAPI.services',
+    'NewsAPI.services'
 ]);
 
 angular.module("NewsAPI.services", []);
@@ -13,7 +14,12 @@ NewsAPI.constant("NewsAPIKey", {
     'UrlAfter': '&sortBy=top&apiKey='
 });
 
-NewsAPI.config(function ($mdThemingProvider, $mdIconProvider) {
+NewsAPI.config(function ($mdThemingProvider, $mdIconProvider, $httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    $httpProvider.defaults.headers.common = 'Content-Type: application/json';
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+
     $mdIconProvider
     .defaultIconSet("./assets/svg/avatars.svg", 128)
     .icon("menu", "./angular_img/menu.svg", 24)

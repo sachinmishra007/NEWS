@@ -98,6 +98,11 @@
     <Content Include="angular_img\info.svg" />
     <Content Include="angular_img\menu.svg" />
     <Content Include="angular_material\scripts\controllers\DocumentationController.js" />
+    <Content Include="images\atomspehe.jpg" />
+    <Content Include="images\sunrise.jpg" />
+    <Content Include="images\sunset.jpg" />
+    <Content Include="images\weather.jpg" />
+    <Content Include="images\wind.jpg" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

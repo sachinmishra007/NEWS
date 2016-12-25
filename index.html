@@ -21,7 +21,7 @@
                         <img id="mainImage" src="https://api.sololearn.com/Uploads/Avatars/3059838.jpg" style="border-radius: 50%;
     border-style: solid;
     border-color: #55de43 #28ea5a;
-    border-width: 5px;" width="200px" height="200px" />
+    border-width: 5px;" width="150px" height="150px" />
                     </center>
                 </span>
                 <span id="animationSandbox" style="display: block;"><h1 class="site__title mega"><center style="margin-top:-27px;">Welcome to Material Designing</h1></center></span>
@@ -31,7 +31,11 @@
                             <span id="newsapp"><button class="butt js--triggerAnimation" ng-click="ClickOnLetsExploreButton('news')">NEWS APP</button></span>
                             <span id="weatherapp"><button class="butt js--triggerAnimation" ng-click="ClickOnLetsExploreButton('weather')">WEATHER APP</button></span>
                         </div>
-                        <span id="labeltoDisplay"><label style=" cursor:pointer; font-size: 16px;text-shadow: 1px -1px 1px #ef0b0b; color: #ef0b0b;" ng-click="DirectOnSolo()">Developed by Sachin Mishra</label></span>
+                        <span id="labeltoDisplay">
+                            <br /><br />
+                            <label style=" cursor:pointer; font-size: 21px;text-shadow: 3px 2px 2px #adef0b;
+    color: #7c12cc;" ng-click="DirectOnSolo()">Developed by Sachin Mishra</label>
+                        </span>
                     </center>
                 </span>
             </div>
@@ -47,5 +51,6 @@
 <script src="angular_material/angular-material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="angular_material/scripts/app.js"></script>
+<script src="angular_material/scripts/services/NewsService.js"></script>
 <script src="angular_material/scripts/controllers/DocumentationController.js"></script>
 </html>

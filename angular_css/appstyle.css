@@ -6,7 +6,7 @@
 
 
 .site__title {
-    text-shadow: 3px 2px 1px #ef0b0b;
+    text-shadow: 3px 2px 2px #adef0b;
     color: #7c12cc;
     background-image: -webkit-linear-gradient(92deg,#7c12cc,#0d0c29);
     -webkit-background-clip: text;
@@ -29,8 +29,10 @@ h1, .alpha {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-weight: 700;
-    color: #7c12cc;
+    /*color: #7c12cc;*/
     cursor: pointer;
+    color: yellow;
+    border-color: yellow;
     -webkit-animation: hue 60s infinite linear;
 }
 
@@ -52,6 +54,15 @@ h1, .alpha {
     line-height: 0.5;
     letter-spacing: -.05em;
     margin-top: 1.5rem;
+}
+
+.indexImageView {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #55de43 #28ea5a;
+    border-width: 5px;
+    width: 200px;
+    height: 200px;
 }
 
 @media screen and (max-width: 480px) {
@@ -77,7 +88,20 @@ h1, .alpha {
     }
 
     .newsImageViewOnMobile {
-            margin-top: 41px !important;
+        margin-top: 41px !important;
+    }
+
+    .imgResizeForMobileView {
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #55de43 #28ea5a;
+        border-width: 5px;
+        width: 120px;
+        height: 120px;
+    }
+
+     .loadingForMobile {
+        margin-left: 110px !important;
     }
 }
 
@@ -155,4 +179,15 @@ h1, .alpha {
 
 .progressLineardemoBasicUsage md-progress-linear {
     background-color: yellow;
+}
+
+
+
+.weatherStyle{
+        margin-left: 40%;
+}
+
+.dividerLine{
+    margin-top: -13px;
+    border-style: solid;
 }

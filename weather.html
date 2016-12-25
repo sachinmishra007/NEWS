@@ -11,20 +11,159 @@
     <link href="angular_css/animate.min.css" rel="stylesheet" />
     <link href="angular_css/appstyle.css" rel="stylesheet" />
 </head>
-<body ng-app="NewsAPI" ng-controller="DocumentationController" ng-cloak  ng-style="{{colorName}}">
-    <div id="WelcomeText">
-        <header class="site__header island">
-            <div class="wrap">
-                <span id="animationSandbox" style="display: block;"><h1 class="site__title mega"><center><br /><br /><br /><b></b>Coming Soon .....</h1></center></span>
-                <span>
-                    <center>
-                        <div layout="row" layout-xs="column" layout-align="center center">
-                            <span id="newsapp"><button class="butt js--triggerAnimation" ng-click="ClickOnLetsExploreButton('index')">back</button></span>
-                        </div>
-                    </center>
-                </span>
+<body ng-app="NewsAPI" ng-controller="DocumentationController" ng-cloak>
+
+
+
+    <div layout="row" layout-wrap>
+        <div flex="100">
+            <md-toolbar style="background-color: #3f51b5; cursor:pointer">
+                <a href="index.html" style="text-decoration:none;color:white;"><h1 style="margin-left: 21px;    margin-top: 7px;">Weather Information</h1></a>
+            </md-toolbar>
+            <md-content layout="row" layout-align="center center" layout-xs="row">
+                <md-input-container>
+                    <label>Enter Your Country Name</label>
+                    <input ng-model="SearchText" class="md-block" />
+                </md-input-container>
+                <md-button ng-click="SearchTextForCountry(SearchText)" class="md-primary md-raised md-ink-ripple">Search</md-button>
+            </md-content>
+
+            <div ng-show="IsNewsVisible==false">
+                <div>
+                    <div style="float:none">
+                        <center><md-progress-circular md-mode="indeterminate" class="md-warn md-hue-4" md-diameter="96"></md-progress-circular></center>
+                    </div>
+                    <h1 class="md-display-1 loadingForMobile">
+                        <center style="text-shadow: 3px 2px 2px #adef0b;    color: #7c12cc; font-size: 38px;">Loading.....</center>
+                    </h1>
+                </div>
             </div>
-        </header>
+            <div ng-show="IsNewsVisible">
+                <md-toolbar layout="column" style="background-color: #3f51b5;" layout-padding>
+                    <div style="    float: right;    margin-top: -17px;    margin-bottom: -27px;">
+                        <h1 class="md-headline">
+                            <span>
+                                <h1 style="padding: 12px;    margin-top: -10px;    margin-bottom: 0.3rem;">
+                                    {{ResultData.location.city}}
+                                </h1>
+                            </span>
+                            Last Updated On {{ResultData.lastBuildDate}} at {{ResultData.location.country}} , {{ResultData.location.region}}
+                        </h1>
+                    </div>
+                </md-toolbar>
+                <md-content class="md-padding" layout-xs="column" layout="row">
+
+                    <div flex-xs flex-gt-xs="25" layout-="column">
+                        <md-card class="md-whiteframe-24dp" md-theme-watch>
+                            <center><img src="images/sunrise.jpg" width="80px" height="80px" /></center>
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">Sunrise & Sunset</span>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-card-content>
+                                <!--<hr />-->
+                                <md-divider class="dividerLine"></md-divider>
+                                <p>
+                                    <span>Sunrise  <span style="float:right">{{ResultData.astronomy.sunrise}}</span></span><br />
+                                    <span>Sunset <span style="float:right">{{ResultData.astronomy.sunset}}</span> </span>
+                                </p>
+                            </md-card-content>
+                            <md-card-actions layout="column" layout-align="end end">
+                                <md-button class="md-raised md-primary md-ink-ripple">Read More</md-button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column">
+                        <md-card class="md-whiteframe-24dp">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">Atmosphere</span>
+                                    <md-divider></md-divider>
+                                    <span class="md-subhead">
+                                        <div style="    font-size: 16px;    font-style: bold;    font-weight: bold;">
+                                            <span>Humidity <span style="float:right"> {{ResultData.atmosphere.humidity}} %</span> </span>
+                                            <md-divider></md-divider>
+                                            <span>Pressure <span style="float:right">{{ResultData.atmosphere.pressure}}</span></span>
+                                            <md-divider></md-divider>
+                                            <span>Visibility<span style="float:right">{{ResultData.atmosphere.visibility}}</span></span>
+                                        </div>
+                                    </span>
+                                </md-card-title-text>
+                                <md-card-title-media>
+                                    <div class="md-media-md card-media" style="padding-left: 28px;">
+                                        <img style="border-radius: 8%;    border-color: 5px 2px yellow;    border-style: solid;    border-color: #b0fb09 #c8fb03;    background-color: white;" src="images/atomspehe.jpg" />
+                                    </div>
+                                </md-card-title-media>
+                            </md-card-title>
+                            <md-card-actions layout="column" layout-align="end end">
+                                <md-button class="md-raised md-primary md-ink-ripple">Read More</md-button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column">
+                        <md-card class="md-whiteframe-24dp">
+                            <center><img src="images/weather.jpg" /></center>
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">Weather</span>
+
+                                </md-card-title-text>
+                            </md-card-title>
+
+                            <md-card-content>
+                                <md-divider class="dividerLine"></md-divider>
+                                <p>
+                                    <span>Temperature<span style="float:right">{{( ( ResultData.item.condition.temp -32 ) *.556 ) | number:3}} &#8451;</span></span>
+                                    <md-divider></md-divider>
+                                    <span>Fahrenheit<span style="float:right">{{ResultData.item.condition.temp}} &#8457;</span></span>
+                                    <md-divider></md-divider>
+                                    <span>Weather<span style="float:right">{{ResultData.item.condition.text}} </span></span>
+                                    <md-divider></md-divider>
+                                </p>
+                            </md-card-content>
+                            <md-card-actions layout="column" layout-align="end end">
+                                <md-button class="md-primary md-raised md-ink-ripple">
+                                    Read More
+                                </md-button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+
+
+                    <div flex-xs flex-gt-xs="25" layout="column">
+                        <md-card class="md-whiteframe-24dp">
+                            <center><img src="images/wind.jpg" /></center>
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">Weather</span>
+
+                                </md-card-title-text>
+                            </md-card-title>
+
+                            <md-card-content>
+                                <md-divider class="dividerLine"></md-divider>
+                                <p>
+                                    <span>Wind<span style="float:right">{{ResultData.wind.chill}} mph NE</span></span>
+                                    <md-divider></md-divider>
+                                    <span>Barometer<span style="float:right">{{ResultData.wind.speed}} inches</span></span>
+                                    <md-divider></md-divider>
+                                    <span>Direction <span style="float:right">{{ResultData.wind.direction}} Kmph</span></span>
+                                    <md-divider></md-divider>
+                                </p>
+                            </md-card-content>
+                            <md-card-actions layout="column" layout-align="end end">
+                                <md-button class="md-primary md-raised md-ink-ripple" layout-align="end end">
+                                    Read More
+                                </md-button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+                </md-content>
+            </div>
+        </div>
     </div>
 
 </body>
@@ -36,5 +175,6 @@
 <script src="angular_material/angular-material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="angular_material/scripts/app.js"></script>
+<script src="angular_material/scripts/services/NewsService.js"></script>
 <script src="angular_material/scripts/controllers/DocumentationController.js"></script>
 </html>

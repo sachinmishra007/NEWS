@@ -1,7 +1,4 @@
-﻿
-
-
-angular.module("NewsAPI.controllers", [])
+﻿angular.module("NewsAPI.controllers", [])
     .controller("NewsAPIController", function ($scope, $document, $q, $window, $interval, $timeout, $log, NewsAPIKey, NewsAPIServices, $mdSidenav, $mdBottomSheet) {
 
         $scope.NewsAPISource = {};
@@ -38,7 +35,7 @@ angular.module("NewsAPI.controllers", [])
             $scope.LogMe(_error);
         });
         };
-        $scope.GetNewsContentData('abc-news-au','ABC News (AU) general / en');
+        $scope.GetNewsContentData('abc-news-au', 'ABC News (AU) general / en');
 
         $scope.toggleList = function () {
             $mdSidenav('left').toggle();
