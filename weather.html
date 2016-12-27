@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Material Designing By Sachin Mishra</title>
@@ -18,7 +19,7 @@
     <div layout="row" layout-wrap>
         <div flex="100">
             <md-toolbar style="background-color: #3f51b5; cursor:pointer">
-                <a href="index.html" style="text-decoration:none;color:white;"><h1 style="margin-left: 21px;    margin-top: 7px;">Weather Information</h1></a>
+                <a href="index.html" style="text-decoration:none;color:white;"><h1 style="margin-left: 21px;    margin-top: 7px;text-shadow: 3px 2px 2px #adef0b;">Weather Information</h1></a>
             </md-toolbar>
             <md-content layout="row" layout-align="center center" layout-xs="row">
                 <md-input-container>
@@ -39,18 +40,53 @@
                 </div>
             </div>
             <div ng-show="IsNewsVisible">
-                <md-toolbar layout="column" style="background-color: #3f51b5;" layout-padding>
+                <md-toolbar layout="column" style="background-color: #3f51b5; margin-left:1%;" layout-padding>
                     <div style="    float: right;    margin-top: -17px;    margin-bottom: -27px;">
                         <h1 class="md-headline">
-                            <span>
+                            <span style="float:left;text-shadow: 3px 2px 2px #adef0b;">
                                 <h1 style="padding: 12px;    margin-top: -10px;    margin-bottom: 0.3rem;">
                                     {{ResultData.location.city}}
                                 </h1>
                             </span>
-                            Last Updated On {{ResultData.lastBuildDate}} at {{ResultData.location.country}} , {{ResultData.location.region}}
+                            <span style="float:right;text-shadow: 3px 2px 2px #adef0b;">
+                                Updated {{ResultData.lastBuildDate}} at {{ResultData.location.country}} , {{ResultData.location.region}}
+                            </span>
                         </h1>
                     </div>
                 </md-toolbar>
+                <md-content class="md-padding" layout-xs="column" layout="row" style="font-size: 17px;    text-shadow: 0px 1px 0px #5f32cd">
+                    <div flex-xs flex-ft-xs="20" layout="column">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        26 Dec 2016
+                                        <center>
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="//ssl.gstatic.com/onebox/weather/48/sunny.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        Monday
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">20</span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">13</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+
+                </md-content>
                 <md-content class="md-padding" layout-xs="column" layout="row">
 
                     <div flex-xs flex-gt-xs="25" layout-="column">
@@ -116,9 +152,17 @@
                             <md-card-content>
                                 <md-divider class="dividerLine"></md-divider>
                                 <p>
-                                    <span>Temperature<span style="float:right">{{( ( ResultData.item.condition.temp -32 ) *.556 ) | number:3}} &#8451;</span></span>
+                                    <span>
+                                        Temperature<span style="float:right">
+                                            {{( ( ResultData.item.condition.temp -32 ) *.556 ) | number:3}}
+                                        </span>
+                                    </span>
                                     <md-divider></md-divider>
-                                    <span>Fahrenheit<span style="float:right">{{ResultData.item.condition.temp}} &#8457;</span></span>
+                                    <span>
+                                        Fahrenheit<span style="float:right">
+                                            {{ResultData.item.condition.temp}}
+                                        </span>
+                                    </span>
                                     <md-divider></md-divider>
                                     <span>Weather<span style="float:right">{{ResultData.item.condition.text}} </span></span>
                                     <md-divider></md-divider>
@@ -138,7 +182,7 @@
                             <center><img src="images/wind.jpg" /></center>
                             <md-card-title>
                                 <md-card-title-text>
-                                    <span class="md-headline">Weather</span>
+                                    <span class="md-headline">Wind</span>
 
                                 </md-card-title-text>
                             </md-card-title>
