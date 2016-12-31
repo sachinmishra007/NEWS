@@ -82,6 +82,9 @@ h1, .alpha {
     .loadingForMobile {
         margin-left: 110px !important;
     }
+     .loadingForWeatherMobile {
+        margin-left: 46px !important;
+    }
 
     .loadingtheLoader {
         margin-left: 50% !important;

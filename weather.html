@@ -18,13 +18,21 @@
 
     <div layout="row" layout-wrap>
         <div flex="100">
+
             <md-toolbar style="background-color: #3f51b5; cursor:pointer">
-                <a href="index.html" style="text-decoration:none;color:white;"><h1 style="margin-left: 21px;    margin-top: 7px;text-shadow: 3px 2px 2px #adef0b;">Weather Information</h1></a>
+                <div id="span16">
+                    <a href="index.html" style="text-decoration:none;color:white;">
+                        <h1 style="margin-left: 21px;    margin-top: 7px;text-shadow: 3px 2px 2px #adef0b;">
+                            Weather Information
+
+                        </h1>
+                    </a>
+                </div>
             </md-toolbar>
             <md-content layout="row" layout-align="center center" layout-xs="row">
                 <md-input-container>
-                    <label>Enter Your Country Name</label>
-                    <input ng-model="SearchText" class="md-block" />
+                    <label>Enter Your State Name</label>
+                    <input ng-model="SearchText" class="md-block" ng-change="TextChangesEvent(SearchText)" />
                 </md-input-container>
                 <md-button ng-click="SearchTextForCountry(SearchText)" class="md-primary md-raised md-ink-ripple">Search</md-button>
             </md-content>
@@ -34,35 +42,41 @@
                     <div style="float:none">
                         <center><md-progress-circular md-mode="indeterminate" class="md-warn md-hue-4" md-diameter="96"></md-progress-circular></center>
                     </div>
-                    <h1 class="md-display-1 loadingForMobile">
-                        <center style="text-shadow: 3px 2px 2px #adef0b;    color: #7c12cc; font-size: 38px;">Loading.....</center>
+                    <h1 class="md-display-1 loadingForWeatherMobile">
+                        <center style="text-shadow: 0px 2px 1px #c9d6af;    color: #7c12cc; font-size: 38px;">Loading.....</center>
                     </h1>
                 </div>
             </div>
-            <div ng-show="IsNewsVisible">
+            <div ng-show="IsNewsVisible && HidePanel">
                 <md-toolbar layout="column" style="background-color: #3f51b5; margin-left:1%;" layout-padding>
-                    <div style="    float: right;    margin-top: -17px;    margin-bottom: -27px;">
-                        <h1 class="md-headline">
+                    <div style="    float: right;    margin-top: -17px; " id="Span14">
+                        <h1 class=" md-headline">
                             <span style="float:left;text-shadow: 3px 2px 2px #adef0b;">
                                 <h1 style="padding: 12px;    margin-top: -10px;    margin-bottom: 0.3rem;">
                                     {{ResultData.location.city}}
                                 </h1>
                             </span>
-                            <span style="float:right;text-shadow: 3px 2px 2px #adef0b;">
+                            <span style="float:right;text-shadow: 3px 2px 2px #adef0b;    margin-top: 15px;    margin-right: 28px;">
                                 Updated {{ResultData.lastBuildDate}} at {{ResultData.location.country}} , {{ResultData.location.region}}
                             </span>
                         </h1>
                     </div>
                 </md-toolbar>
+
+                <span class="md-headline" style="padding: 22px;text-shadow: 0px 2px 1px #c9d6af;
+    font-size: 27px">Forecast</span>
+
                 <md-content class="md-padding" layout-xs="column" layout="row" style="font-size: 17px;    text-shadow: 0px 1px 0px #5f32cd">
-                    <div flex-xs flex-ft-xs="20" layout="column">
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span1">
                         <md-card class="md-whiteframe-24dp" style="padding: 20px;">
                             <md-card-title>
                                 <md-card-title-text>
                                     <h1 style="    margin-top: -20px;" class="md-headline">
-                                        26 Dec 2016
                                         <center>
-                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="//ssl.gstatic.com/onebox/weather/48/sunny.png">
+                                            {{ResultData.item.forecast[0].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/clear_day@2x.png">
                                         </center>
                                     </h1>
                                 </md-card-title-text>
@@ -71,25 +85,276 @@
 
                                 <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
                                     <center>
-                                        Monday
+                                        {{ResultData.item.forecast[0].day}}
                                     </center>
                                 </span>
                                 <md-divider></md-divider>
                                 <span>High</span>
-                                <span style="float:right">20</span>
+                                <span style="float:right">{{ResultData.item.forecast[0].high}}&#176;</span>
                                 <md-divider></md-divider>
                                 <span>Low</span>
-                                <span style="float:right">13</span>
+                                <span style="float:right">{{ResultData.item.forecast[0].low}}&#176;</span>
                                 <md-divider></md-divider>
                             </md-content>
                         </md-card>
                     </div>
 
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span2">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[1].date}}
 
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/clear_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[1].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[1].high}}&#176; </span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[1].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span3">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[3].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/clear_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[3].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[3].high}}&#176; </span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[3].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span4">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[4].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[4].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[4].high}}&#176; </span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[4].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span5">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[5].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[5].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[5].high}}&#176; </span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[5].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
                 </md-content>
+
+                <md-content class="md-padding" layout-xs="column" layout="row" style="font-size: 17px;    text-shadow: 0px 1px 0px #5f32cd">
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span6">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[6].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/clear_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[6].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[6].high}}&#176;</span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[6].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span7">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[7].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/clear_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[7].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[7].high}}&#176;</span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[7].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span8">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[8].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[8].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[8].high}}&#176;</span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[8].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span9">
+                        <md-card class="md-whiteframe-24dp" style="padding: 20px;">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <h1 style="    margin-top: -20px;" class="md-headline">
+                                        <center>
+                                            {{ResultData.item.forecast[9].date}}
+
+                                            <img style="height:48px;width:48px   ; margin-bottom: -36px;" alt="Sunny" src="https://in.news.yahoo.com/sy/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png">
+                                        </center>
+                                    </h1>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-content>
+
+                                <span style="    text-shadow: 1px -1px 2px yellowgreen;    font-size: 17px;padding-bottom: 10px;">
+                                    <center>
+                                        {{ResultData.item.forecast[9].day}}
+                                    </center>
+                                </span>
+                                <md-divider></md-divider>
+                                <span>High</span>
+                                <span style="float:right">{{ResultData.item.forecast[9].high}}&#176;</span>
+                                <md-divider></md-divider>
+                                <span>Low</span>
+                                <span style="float:right">{{ResultData.item.forecast[9].low}}&#176;</span>
+                                <md-divider></md-divider>
+                            </md-content>
+                        </md-card>
+                    </div>
+                </md-content>
+
+                <span class="md-headline" style="padding: 22px;text-shadow: 0px 2px 1px #c9d6af;
+    font-size: 27px">Other Information</span>
                 <md-content class="md-padding" layout-xs="column" layout="row">
 
-                    <div flex-xs flex-gt-xs="25" layout-="column">
+                    <div flex-xs flex-gt-xs="25" layout-="column" id="Span10">
                         <md-card class="md-whiteframe-24dp" md-theme-watch>
                             <center><img src="images/sunrise.jpg" width="80px" height="80px" /></center>
                             <md-card-title>
@@ -111,7 +376,7 @@
                         </md-card>
                     </div>
 
-                    <div flex-xs flex-gt-xs="25" layout="column">
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span11">
                         <md-card class="md-whiteframe-24dp">
                             <md-card-title>
                                 <md-card-title-text>
@@ -139,7 +404,7 @@
                         </md-card>
                     </div>
 
-                    <div flex-xs flex-gt-xs="25" layout="column">
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span12">
                         <md-card class="md-whiteframe-24dp">
                             <center><img src="images/weather.jpg" /></center>
                             <md-card-title>
@@ -154,7 +419,7 @@
                                 <p>
                                     <span>
                                         Temperature<span style="float:right">
-                                            {{( ( ResultData.item.condition.temp -32 ) *.556 ) | number:3}}
+                                            {{( ( ResultData.item.condition.temp -32 ) *.556 ) | number:3}}&#176;
                                         </span>
                                     </span>
                                     <md-divider></md-divider>
@@ -176,8 +441,7 @@
                         </md-card>
                     </div>
 
-
-                    <div flex-xs flex-gt-xs="25" layout="column">
+                    <div flex-xs flex-gt-xs="25" layout="column" id="Span13">
                         <md-card class="md-whiteframe-24dp">
                             <center><img src="images/wind.jpg" /></center>
                             <md-card-title>
@@ -205,6 +469,7 @@
                             </md-card-actions>
                         </md-card>
                     </div>
+
                 </md-content>
             </div>
         </div>
